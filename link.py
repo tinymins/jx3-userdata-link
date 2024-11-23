@@ -98,13 +98,13 @@ def main():
         actions.append(["mkdir", "{cwd}/../%s/{branch}" % name])
         actions.append(["mklink", "{cwd}/../%s/{branch}" % name, "{client}/%s" % name])
 
-    for name in ["facedata", "newfacedata", "bodydata"]:
+    for name in ["facedata", "newfacedata", "bodydata", "screenshot", "dcim"]:
         actions.append(["mkdir", "{cwd}/../%s/{tech_branch}" % name])
         actions.append(
             ["mklink", "{cwd}/../%s/{tech_branch}" % name, "{client}/%s" % name]
         )
 
-    for name in ["screenshot", "dcim"]:
+    for name in []:
         actions.append(["mkdir", "{cwd}/../%s" % name])
         actions.append(["mklink", "{cwd}/../%s" % name, "{client}/%s" % name])
 
